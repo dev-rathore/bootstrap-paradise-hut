@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --starWhite: #f4f2ff;
+  --grey: #C0C0C0;
+  --lightDark: #2E4053;
+  --dark: #1C2833;
+
+  --smallFS: 1.1rem;
+  --mediumFS: 1.7rem;
+  --largeFS: 2.5rem;
+  --extralargeFS: 3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: var(--lightDark)
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+#nav-header{
+  padding: 3% 9%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url("./images/header-image.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+#header{
+  height: 80vh;
+  color: var(--starWhite);
+}
+
+.extralarge-fs{
+  font-size: var(--extralargeFS);
+}
+.large-fs{
+  font-size: var(--largeFS);
+}
+.medium-fs{
+  font-size: var(--mediumFS);
+}
+.small-fs{
+  font-size: var(--smallFS);
+}
+
+.hr{
+  margin: auto;
+  border-top: 10px dotted var(--lightDark);
+  width: 100px;
+}
+
+/* Places section */
+
+#feature-section{
+  padding: 9% 9% 5%;
+}
+.grid-item{
+  padding: 2% 2%;
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--lightDark);
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: var(--dark);
+}
+
+/* Food */
+
+#food{
+  padding: 8%;
+}
+.food-heading{
+  margin-bottom: 10%;
+}
+.food-item{
+  overflow: hidden;
+}
+.food-item img{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+}
+.food-item img:hover{
+  transform: scale(1.1);
+  opacity: .9;
+}
+
+/* Testimonials */
+
+#testimonials{
+  padding: 8% 8% 10%;
+}
+.testimonials-heading{
+  margin-bottom: 3.5em;
+}
+.reviewer1, .reviewer2{
+  position: relative;
+  margin: 0% 3%;
+}
+.reviewer{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+}
+.review{
+  padding: 5rem 2rem 1rem;
+  border: 0px solid var(--dark);
+  box-shadow: 1px 1px 10px var(--grey);
+  border-radius: 2px;
+}
+.review-main{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.review-text{
+  font-weight: 300;
+}
+.reviewer-name{
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Prices */
+
+#pricing{
+	padding: 8% 9%;
+}
+.pricing-heading{
+  margin-bottom: 4%;
+}
+.pricing-column{
+	padding: 3% 2%;
+}
+.card{
+  margin: 10px;
+  box-shadow: 1px 1px 5px var(--grey);
+}
+.card-header h3{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+.card-title{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+.card-text{
+  font-weight: 300;
+}
+
+/* Form Section */
+
+#form-section{
+  padding: 5rem 3rem 4rem;
+  color: var(--starWhite);
+}
+.form-heading{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+#form-section a{
+  color: var(--starWhite);
+}
+#form-section a:hover{
+  color: var(--grey);
+}
+#form-section li{
+  font-weight: 300;
+}
+
+/* Footer */
+
+#footer{
+  padding: 3% 15%;
+  color: var(--starWhite);
+}
+
+.social-icon{
+  cursor: pointer;
+	margin: 20px 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+@media screen and (max-width: 768px){
+  :root{
+    --smallFS: 0.9rem;
+    --mediumFS: 1.3rem;
+    --largeFS: 1.8rem;
+    --extralargeFS: 2.5rem;
+  }
+
+  .reviewer1{
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  :root{
+    --smallFS: 0.5rem;
+    --mediumFS: 1rem;
+    --largeFS: 1.5rem;
+    --extralargeFS: 2rem;
+  }
+}
