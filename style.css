@@ -34,7 +34,7 @@ body, html {
 }
 
 #hero{
-  height: 80vh;
+  min-height: 100vh;
   color: var(--starWhite);
   padding: 3% 9%;
   height: 100vh;
