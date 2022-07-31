@@ -25,22 +25,22 @@
 </head>
 
 <body>
-  <!-- Navigation bar + Header -->
-  <section id="nav-header">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
 
-        <!-- Logo + Name of website -->
-        <a class="navbar-brand fs-6" href="#">
-          <img src="./images/logo.jpg" alt="" width="30" height="30" class="d-inline-block align-center">
-          Paradise Hut
+  <!-- Navigation Bar + Header -->
+  <section id="hero">
+
+    <nav>
+      <div class="nav-div container-fluid navbar navbar-expand-lg navbar-dark">
+        <!-- Logo of website -->
+        <a class="navbar-brand d-flex flex-column align-items-center justify-content-center" href="#">
+          <img src="./images/logo.png" alt="Logo" width="50" height="50">
         </a>
-
+  
         <!-- Button for navigation bar in small devices -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+  
         <!-- Navigation links -->
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -51,7 +51,7 @@
               <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#food">Food</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,7 +65,7 @@
               </ul>
             </li>
           </ul>
-
+  
           <!-- Input for search + Searh button -->
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -75,11 +75,12 @@
       </div>
     </nav>
 
-    <header id="header" class="d-flex align-items-center">
+
+    <header class="d-flex align-items-center">
       <div>
         <h1 class="extralarge-fs">CREAMY. DREAMY. DELICIOUS.</h1>
         <p class="medium-fs">Experience the true taste of tradition</p>
-        <button type="button" class="btn btn-light">Order Now</button>
+        <button type="button" class="btn btn-light btn-lg">Order Now</button>
       </div>
     </header>
   </section>  
@@ -121,7 +122,11 @@
     </div>
   </section>
 
-  <div class="hr"></div>
+  <!-- Parallax -->
+
+  <section id="parallax" class="parallax">
+
+  </section>
 
   <!-- Menu -->
 
@@ -169,17 +174,17 @@
         <div class="reviewer1 col-lg-5" data-aos="flip-left" data-aos-duration="1000">
             <img class="reviewer" src="./images/reviewer1.jpg">
           <div class="review">
-            <h3 class="review-main">“Absolutely Delicious!!!”</h3>
-            <p class="review-text">My wife and I had our Anniversary dinner at the Fairway last night. We sat outside on the terrace which was very pretty and private. Our waitress was wonderful and the food was absolutely delicious!! It could not have been more spectacular! We would highly recommend it to everyone!!</p>
-            <p class="reviewer-name">- Tony Stark</p>  
+            <h3 class="review-main pt-2 pb-4 text-center">“Absolutely Delicious!!!”</h3>
+            <p class="review-text px-4">My wife and I had our Anniversary dinner at the Fairway last night. We sat outside on the terrace which was very pretty and private. Our waitress was wonderful and the food was absolutely delicious!! It could not have been more spectacular! We would highly recommend it to everyone!!</p>
+            <p class="reviewer-name text-end mt-4">- Tony Stark</p>  
           </div>
         </div>  
         <div class="reviewer2 col-lg-5" data-aos="flip-right" data-aos-duration="1000">
             <img class="reviewer" src="./images/reviewer2.jpg">
 			    <div class="review">
-            <h3 class="review-main">“AAAmazing!!!”</h3>
-			      <p class="review-text">That’s the best way to put it. From price, to food, to how the wedding day went, Simply Catering was just amazing. Nicole was the coordinator for my actual wedding day and it went on without a hitch. Everybody raved about the food. It was exactly what I pictured when I thought of my wedding day caterer. Thank you so much for everything, Simply Catering!!</p>
-            <p class="reviewer-name">- Chris evans</p>  
+            <h3 class="review-main pt-2 pb-4 text-center">“AAAmazing!!!”</h3>
+			      <p class="review-text px-4">That’s the best way to put it. From price, to food, to how the wedding day went, Simply Catering was just amazing. Nicole was the coordinator for my actual wedding day and it went on without a hitch. Everybody raved about the food. It was exactly what I pictured when I thought of my wedding day caterer. Thank you so much for everything, Simply Catering!!</p>
+            <p class="reviewer-name text-end mt-4">- Chris Evans</p>  
           </div>
         </div>
       </div>
@@ -220,116 +225,124 @@
     </div>
   </section>
 
-  <!-- Prices -->
+  <!-- Pricing -->
+
   <section id="pricing">
     <h2 class="pricing-heading">&#9734;  Catering Service &#8594;</h2>
     <div class="row text-center">
-      <div class="pricing-column col-lg-4" data-aos="fade-up-right" data-aos-duration="1500">
+      <div class="pricing-column col-lg-4" data-aos="fade-up-right" data-aos-duration="1000">
         <div class="card">
           <div class="card-header">
-            <h3 class="medium-fs">Party Food for 10-20 guests</h3> 
+            <h4 class="py-3 px-2">Party Food for 10-20 guests</h4> 
           </div>
-          <div class="card-body">
+          <div class="card-body py-4 px-4">
             <h2 class="card-title medium-fs">Starting From $100</h2>
-            <p class="card-text">Simply select your choice of Starters + Mains + Desserts and Delivery address. We will deliver these trendy and stylish catering to your home with hot and tasty food along with bio-degradable plates and cutlery.</p>
-            <button class="btn btn-lg btn-block btn-outline-primary" type="button">Book Now</button>
+            <p class="card-text pt-3 px-2">Simply select your choice of Starters + Mains + Desserts and Delivery address. We will deliver these trendy and stylish catering to your home with hot and tasty food along with bio-degradable plates and cutlery.</p>
+            <button class="btn btn-lg btn-block btn-outline-primary my-2" type="button">Book Now</button>
           </div>
         </div>
       </div>
-      <div class="pricing-column col-lg-4" data-aos="fade-up" data-aos-duration="1500">
+      <div class="pricing-column col-lg-4" data-aos="fade-up" data-aos-duration="1000">
         <div class="card">
           <div class="card-header">
-            <h3 class="medium-fs">Catering for 20-100 guests</h3>
+            <h4 class="py-3 px-2">Catering for 20-100 guests</h4>
           </div>
-          <div class="card-body">
+          <div class="card-body py-4 px-4">
             <h2 class="card-title medium-fs">Starting From $300</h2>
-            <p class="card-text">Customize the menu and price according to your budget and Order Online. Hassle free catering experience where you get Hot Buffet at home with Buffet Setup + Waiter + Professional Service.</p>
-            <button class="btn btn-lg btn-block btn-primary" type="button">Book Now</button>
+            <p class="card-text pt-3 px-2">Customize the menu and price according to your budget and Order Online. Hassle free catering experience where you get Hot Buffet at home with Buffet Setup + Waiter + Professional Service.</p>
+            <button class="btn btn-lg btn-block btn-primary my-2" type="button">Book Now</button>
           </div>
         </div>
       </div>
-      <div class="pricing-column col-lg-4" data-aos="fade-up-left" data-aos-duration="1500">
+      <div class="pricing-column col-lg-4" data-aos="fade-up-left" data-aos-duration="1000">
         <div class="card">
           <div class="card-header">
-            <h3 class="medium-fs">Ideal for more than 100 people</h3>
+            <h4 class="py-3 px-2">Ideal for more than 100 people</h4>
           </div>
-          <div class="card-body">
+          <div class="card-body py-4 px-4">
             <h2 class="card-title medium-fs">Starting From $700</h2>
-            <p class="card-text">Individual Boxed Meals / Packed Lunches or Dinners. Healthy and Homely Daily Meals for employees of small and large companies. Minimum order size if 10+ employees. Best market prices and utmost hygiene.</p>
-            <button class="btn btn-lg btn-block btn-primary" type="button">Book Now</button>
+            <p class="card-text pt-3 px-2">Individual Boxed Meals / Packed Lunches or Dinners. Healthy and Homely Daily Meals for employees of small and large companies. Minimum order size if 10+ employees. Best market prices and utmost hygiene.</p>
+            <button class="btn btn-lg btn-block btn-primary my-2" type="button">Book Now</button>
           </div>
         </div>
       </div>
     </div>    
   </section>
 
-  <!-- Form -->
-  <section id="form-section" class="bg-dark">
-    <h2 class="form-heading mb-4">Paradise Hut.</h2>
-    <div class="row justify-content-lg-between justify-content-sm-center ">
-
-      <div class="col-lg-5 d-flex align-items-center text-center">
-        <div class="row justify-content-sm-center">
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Contact Us</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">About</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Media Contacts</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Advertise</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Careers</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Reports</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Food Service</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Customer Care</a>
-          <a href="#" class="my-2 text-decoration-none col-lg-4 col-sm-6 col-xs-12">Affiliate</a>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <h3 class="fw-light mt-5 mb-4">Receive the Latest Updates &#8594;</h3>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Near by Country</label>
-            <select id="inputState" class="form-select">
-              <option selected>Europe</option>
-              <option>India</option>
-              <option>Japan</option>
-              <option>America</option>
-              <option>Dubai</option>
-              <option>Australia</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-      </div>
-    </div>  
-  </section>  
-
   <!-- Footer -->
+  <footer id="footer-section" class="bg-dark">
 
-  <footer id="footer" class="text-center bg-dark">
-  <div class="container-fluid">
-  	<i class="social-icon fab fa-facebook-f"></i>
-  	<i class="social-icon fab fa-twitter"></i>
-  	<i class="social-icon fab fa-instagram"></i>
-  	<i class="social-icon fas fa-envelope"></i>
-    <p>© 2021 ParadiseHut, All Rights Reserved.</p>
-  </div>  
-  </footer>
+    <!-- Footer Section 1 -->
+    <section>
+      <h1 class="footer-heading mb-4 text-sm-start text-center">Paradise Hut</h1>
+      <div class="mt-5 d-flex justify-content-md-evenly justify-content-center align-items-center flex-wrap">
+        
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+          
+          <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center pb-4 px-4">
+            <h4 class="text-uppercase py-2 fw-bolder">Resources</h4>
+            <a href="#" class="text-decoration-none py-1">Menu</a>
+            <a href="#" class="text-decoration-none py-1">FAQ</a>
+            <a href="#" class="text-decoration-none py-1">Recipes</a>
+          </div>
+          <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center pb-4 px-4">
+            <h4 class="text-uppercase py-2 fw-bold">Pricing</h4>
+            <a href="#" class="text-decoration-none py-1">Overview</a>
+            <a href="#" class="text-decoration-none py-1">Affiliate</a>
+            <a href="#" class="text-decoration-none py-1">Promotions</a>
+          </div>
+          <div class="d-flex flex-column align-items-center align-items-md-start justify-content-center pb-4 px-4">
+            <h4 class="text-uppercase py-2 fw-bolder">Company</h4>
+            <a href="#" class="text-decoration-none py-1">About Us</a>
+            <a href="#" class="text-decoration-none py-1">Partnerships</a>
+            <a href="#" class="text-decoration-none py-1">Blogs</a>
+          </div>
+          
+        </div>
+        
+        <!-- Newsletter -->
+        <div id="newsletter" class="col-lg-5 col-sm-6 mt-5 mt-lg-0">
+          <h3 class="mb-4 fw-bolder">Subscribe for Our Newsletter</h3>
+          <form class="row g-3">
+            <div class="col-lg-6 col-sm-12">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree with the terms and conditions and the privacy statement
+                </label>
+              </div>
+            </div>
+            <div class="col-12 text-sm-start text-center">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>  
+    </section>
+
+    <!-- Footer Section 2 -->
+    <section id="social-links" class="text-center pt-5 bg-dark">
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="social-icon d-flex align-items-center justify-content-center">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </div>
+        <div class="social-icon d-flex align-items-center justify-content-center">
+          <i class="fab fa-twitter fa-lg"></i>
+        </div>
+        <div class="social-icon d-flex align-items-center justify-content-center">
+          <i class="fab fa-instagram fa-lg"></i>
+        </div>
+        <div class="social-icon d-flex align-items-center justify-content-center">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </div>
+      </div>  
+      <p>© 2021 ParadiseHut, All Rights Reserved.</p>
+    </section>
+
+  </footer>  
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
